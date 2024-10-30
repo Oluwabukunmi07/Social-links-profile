@@ -18,16 +18,24 @@
                 <div class="description">"Front-end developer and avid reader"</div>
             </div>
             <div class="button">
-                <button><a href="#">GitHub</a></button>
-                <button><a href="#">Frontend Mentor</a></button>
-                <button><a href="#">LinkedIn</a></button>
-                <button><a href="#">Twitter</a></button>
-                <button><a href="#">Instagram</a></button>
+                <button onclick="event.preventDefault(); previewFunction()">GitHub</button>
+                <button onclick="event.preventDefault(); previewFunction()">Frontend Mentor</button>
+                <button onclick="event.preventDefault(); previewFunction()">LinkedIn</button>
+                <button onclick="event.preventDefault(); previewFunction()">Twitter</button>
+                <button onclick="event.preventDefault(); previewFunction()">Instagram</button>
             </div>    
         </div>
         <div class="footer">
             <p>Challenge by <a href="https://www.frontendmentor.io/profile/Oluwabukunmi07">Frontend Mentor.</a> Coded by <a href="#">Oluwabukunmi</a></p>
         </div>
     </main>
+
+    <script>
+        function previewFunction() {
+        alert("This is a preview of the link.");
+        // or use more complex logic for your preview
+        }
+
+    </script>
 </body>
 </html>
